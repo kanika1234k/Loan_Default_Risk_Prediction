@@ -17,7 +17,7 @@ from sklearn.metrics import accuracy_score
 df = pd.read_csv("data/Loan_default.csv")
 
 # Features and Target
-X = df.drop("Default", axis=1)
+X=df[["Age","Income","LoanAmount"]]
 y = df["Default"]
 
 # Drop LoanID (ID column)
