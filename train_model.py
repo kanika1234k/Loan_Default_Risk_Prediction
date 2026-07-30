@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+# Check import sucess
+print("Libraries imported successfully")
 import pandas as pd
 import joblib
 
@@ -69,3 +73,20 @@ print("Accuracy:", accuracy)
 joblib.dump(model, "models/model.pkl")
 
 print("Model saved successfully!")
+
+# Loan Default Distribution Graph
+plt.figure(figsize=(6,4))
+
+sns.countplot(x="Default", data=df)
+
+plt.title("Loan Default Distribution")
+plt.savefig("Images/loan_default_distribution.png")
+
+plt.show()
+#Age Distribution
+plt.figure(figsize=(6,4))
+sns.histplot(df["Age"],bins=10)
+plt.title("Age Distribution")
+
+plt.savefig("Images/loan_age_distribution.png")
+plt.show()
