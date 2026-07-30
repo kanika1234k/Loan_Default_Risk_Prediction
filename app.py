@@ -7,7 +7,7 @@ import numpy as np
 
 # Load trained model
 
-model = pickle.load(open("models/models.pickle", "rb"))
+model = pickle.load(open("models/model.pkl", "rb"))
 
 
 # App title
