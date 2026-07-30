@@ -6,7 +6,7 @@ import numpy as np
 
 
 
-model=joblib.load("model/models.pkl")
+model=joblib.load("models/model.pkl")
 
 
 # App title
