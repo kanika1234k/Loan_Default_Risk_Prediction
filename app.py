@@ -1,5 +1,5 @@
 # Import required libraries
-
+import joblib
 import streamlit as st
 import pickle
 import numpy as np
@@ -7,7 +7,7 @@ import numpy as np
 
 # Load trained model
 
-model = pickle.load(open("models/model.pkl", "rb"))
+model=joblib.load("model/model.pkl")
 
 
 # App title

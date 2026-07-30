@@ -90,3 +90,7 @@ plt.title("Age Distribution")
 
 plt.savefig("Images/loan_age_distribution.png")
 plt.show()
+import joblib 
+model.fit(X_train,y_train)
+joblib.dump(model,"model/model.pkl")
+print("Model saved successfully!")
