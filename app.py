@@ -4,9 +4,9 @@ import streamlit as st
 import numpy as np
 
 
-# Load trained model
 
-model=joblib.load("model/model.pkl")
+
+model=joblib.load("model/models.pkl")
 
 
 # App title
